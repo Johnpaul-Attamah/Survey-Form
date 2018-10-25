@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Mali');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Mali, sans-serif;
+    font-size: 0.9em;
+    width: 100%;
+    background-color: #a9d7d1;
+}
+
+.container {
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.2rem;
+    padding: 10px;
+    text-align: center;
+    color: #000;
+    font-weight: 900;
+}
+
+#survey-form {
+    width: 70%;
+    background-color: #fafafa;
+    border-radius: 3px;
+    margin: 20px auto;
+}
+
+#survey-form > p {
+    font-size: 1rem;
+    color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+#survey-form > .form {
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    font-size: 1rem;
+}
+
+#name-label, #email-label, 
+#number-label, .right {
+    text-align: right;
+}
+input[type='text'], 
+input[type='email'],
+input[type='number'] {
+    padding: 5px 3px 3px 3px;
+    font-size: .8rem;
+    width: 60%;
+    margin-left: 4%;
+}
+
+#survey-form > .form .block {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+select {
+    width: 40%;
+    padding: 10px;
+    font-size: .8rem;
+    margin-left: 4%;
+}
+
+.radio-block {
+    margin-left: 4%;
+}
+
+.radio-block > div {
+    padding-bottom: 10px;
+}
+
+.radio-block > div:last-of-type {
+    padding-bottom: 0;
+}
+
+.check-block {
+    margin-left: 4%;
+}
+
+.check-block > div {
+    padding-bottom: 10px;
+}
+
+.check-block > div:last-of-type {
+    padding-bottom: 0;
+}
+
+textarea {
+    margin-left: 4%;
+    width: 60%;
+    height: 10vh;
+    padding: 10px;
+}
+
+#submit {
+    width: 10%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    background-color: #59ace0;
+    margin: 2% auto;
+}

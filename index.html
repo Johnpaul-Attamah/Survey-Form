@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="resources/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="title">Survey Form</h1>
+            <form action="" id="survey-form">
+                <p id="description">Let us know how we can improve our site</p>
+                <div class="form">
+                    <div class="block">
+                        <label for="name" id="name-label">Name:</label>
+                        <input type="text" name="name" id="name" required placeholder="Full Name">
+                    </div >
+                    <div class="block">
+                        <label for="email" id="email-label">Email:</label>
+                        <input type="email" name="email" id="email" required placeholder="E-mail">
+                    </div>
+                    <div class="block">
+                        <label for="number" id="number-label">Age:</label>
+                        <input type="number" name="Age" id="number" min="15" max="100" required placeholder="Age">
+                    </div>
+                    <div class="block">
+                        <label for="option" class="right">Which option best describes your current role?</label>
+                        <select name="options" id="dropdown">
+                            <option value="" disabled>Select an option</option>
+                            <option value="Student">Student</option>
+                            <option value="Full-time Job" selected>Full-time Job</option>
+                            <option value="Full-time Learner">Full-time Learner</option>
+                            <option value="Prefer not to say">Prefer not to say</option>
+                            <option value="other">other</option>
+                        </select>
+                    </div>
+                    <div class="radio block">
+                        <span class="right">How likely is that you would recommend <br> our site to a friend?</span>
+                        <div class="radio-block">
+                            <div>
+                                <input type="radio" name="share" id="defnitely">
+                                <label for="defnitely">Defnitely</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="share" id="maybe">
+                                <label for="defnitely">Maybe</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="share" id="not-sure">
+                                <label for="defnitely">Not Sure</label>
+                            </div>
+                        </div> 
+                    </div> 
+                    <div class="block">
+                        <label for="option" class="right">What do you like most in our site:</label>
+                        <select name="options" id="dropdown2">
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="Challenges">Challenges</option>
+                            <option value="Project">Project</option>
+                            <option value="Community">Community</option>
+                            <option value="Open Source">Open Source</option>
+                        </select>
+                    </div>
+                    <div class="check block">
+                        <span class="right">Things that should be improved in the future <br>
+                                    (Check all that apply):</span>
+                        <div class="check-block">
+                            <div>
+                                <input type="checkbox" name="improve" id="Front-end"  value="Front-end" checked>
+                                <label for="Front-end">Front-end Projects</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="improve" id="back-end"  value="back-end" >
+                                <label for="back-end">Back-end Projects</label>
+                            </div>
+                            <div>  
+                                <input type="checkbox" name="improve" id="data"  value="data" >
+                                <label for="data">Data Visualization</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="improve" id="challenges"  value="challenges" >
+                                <label for="challenges">Challenges</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="improve" id="open-source"  value="Open Source" >
+                                <label for="open-source">Open Source Community</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="improve" id="gitter-help"  value="gitter-help" >
+                                <label for="gitter-help">Gitter help rooms</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="improve" id="videos"  value="videos" >
+                                <label for="videos">Videos</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="meetups" id="meetups"  value="meetups" >
+                                <label for="meetups">City Meet-ups</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="improve" id="wiki"  value="wiki" >
+                                <label for="wiki">Wiki</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="improve" id="forum"  value="forum" >
+                                <label for="forum">Forum</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="improve" id="additional"  value="additional" >
+                                <label for="additional">Additional Courses</label>
+                            </div>
+                        </div>
+                    </div>   
+                        <div class="block">
+                            <label for="additional-info" class="right">Any Comments or Suggestions?</label>
+                            <textarea name="additional-info" id="additional-info">Enter your Comments...</textarea>
+                        </div>
+                        <input type="submit" value="Submit" id="submit">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
